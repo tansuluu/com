@@ -1,0 +1,15 @@
+#news_img,#news_text{
+	float:left;
+}
+#news_text b{
+	font-size:12px;
+	color:#126493;
+}
+#news_text{
+	padding: 50px 0px 0px 30px;
+}
+.news_header{
+	color:#126493;
+	font-size:16px;
+	font-weight:bold;
+}

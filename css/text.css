@@ -1,0 +1,89 @@
+body {
+	font: 10px/1.5 'Droid Sans', Arial, 'Liberation Sans', FreeSans, sans-serif;
+	color: #000;
+}
+
+pre,
+code {
+	font-family: 'DejaVu Sans Mono', Menlo, Consolas, monospace;
+}
+
+/* `Headings
+----------------------------------------------------------------------------------------------------*/
+
+h1 {
+	font-size: 2.3em;
+}
+
+h2 {
+	font-size: 2.1em;
+}
+
+h3 {
+	font-size: 1.9em;
+}
+
+h4 {
+	font-size: 1.7em;
+}
+
+h5 {
+	font-size: 1.5em;
+}
+
+h6 {
+	font-size: 1.3em;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-weight: normal;
+}
+
+/* `Spacing
+----------------------------------------------------------------------------------------------------*/
+
+ol {
+	list-style: decimal;
+}
+
+ul {
+	list-style: disc;
+}
+
+li {
+	list-style-type: none;
+	
+}
+/*
+changed by Myktybek font-words
+--------------------------------------------------------------*/
+
+#fon_text{
+	
+	font-size: 17px;
+	
+	text-align: left;
+	
+	color: black;
+	
+	font-family: cursive;
+
+	text-decoration:underline;
+
+}
+#in_tab{
+
+	color: black;
+	
+	font-size: 13px;
+	
+	
+
+}
+#in_tab2{
+	
+	color: blue;
+	
+	font-size:11px;
+
+}
