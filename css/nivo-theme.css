@@ -1,0 +1,72 @@
+
+.theme-effe .nivoSlider {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 450px;
+	background: #fff url(../images/loading.gif) no-repeat 50% 50%;
+	position: relative;
+}
+
+.theme-effe .nivo-caption {
+	font-size: 1.4em;
+	height: auto;
+	text-shadow: none;
+}
+
+.theme-effe .nivoSlider img {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	display: none;
+}
+.theme-effe .nivoSlider a {
+	border: 0;
+	display: block;
+}
+
+.theme-effe .nivo-controlNav {
+	padding: 5px;
+	position: relative;
+	bottom: 0px;
+	right: 0px;
+	z-index: 50;
+}
+
+.theme-effe .nivo-controlNav a {
+	background: #ccc;
+	border-radius: 6px;
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	text-indent: -9999px;
+	border: 0;
+	margin-right: 3px;
+}
+
+.theme-effe .nivo-controlNav a.active {
+	background: #38558d;
+}
+
+.theme-effe .nivo-directionNav a {
+	display: block;
+	width: 35px;
+	height: 35px;
+	background: url('../images/arrows.png') no-repeat;
+	text-indent: -9999px;
+	border: 0;
+	visibility: hidden;
+	background-position: -35px 0px;
+}
+
+.theme-effe a.nivo-nextNav {
+	right: 5px;
+}
+
+.theme-effe a.nivo-prevNav {
+	left: 5px;
+	background-position: 0px 0px;
+}
+
+.theme-effe .nivoSlider:hover .nivo-directionNav a {
+	visibility: visible;
+}

@@ -1,0 +1,542 @@
+body { 
+	background: #fff;
+	height:150%;
+}
+
+p{ font-size: 1.3em; }
+
+p.main {
+	line-height: 1.8em;
+    /* 7px before and after paragraphs */
+    margin: 7px 0 7px 0;
+}
+
+ul.main {
+    font-size: 1.3em;
+}
+ul.main li {
+    margin: 5px 0 10px 35px;
+    list-style-type: square;
+}
+
+ol.main {
+    font-size: 1.3em;
+}
+
+ol.main li {
+    margin: 5px 0 10px 35px;
+    list-style-type: square;
+}
+
+hr.main {
+    border: 1px solid #d3d3d3;
+}
+
+nav {
+    font-size: 1.5em;
+}
+#container {
+	min-height:100%;
+	position:relative;
+}
+/* `Header 
+-----------------------------------------------------------------------------------------------*/
+
+#header-wrap{
+	background: url('../images/header.jpg') repeat-x;
+	height: 79px;
+	box-shadow: 0px 0px 3px 2px rgba( 0, 0, 0, 0.5 );
+	-o-box-shadow: 0px 0px 3px 2px rgba( 0, 0, 0, 0.5 );
+	-moz-box-shadow: 0px 0px 3px 2px rgba( 0, 0, 0, 0.5 );
+	-webkit-box-shadow: 0px 0px 3px 2px rgba( 0, 0, 0, 0.5 );
+	z-index: 600;
+}
+	#logo{
+		float: left;
+	}
+
+/* `Navigation
+-----------------------------------------------------------------------------------------------*/
+
+	#nav {
+		float: right;
+		margin-top: 15px;
+		margin-right: 0px;
+		position: relative;
+	}
+
+	#nav ul {
+		float: right;
+	}
+
+	#nav ul li{
+		float: left;
+	}	
+		#nav ul li a{
+			display: block;
+			color: #eee;
+			font-size: 1.4em;
+			padding: 4px 12px;
+			text-decoration: none;
+			text-align: center;
+		}
+		
+			#nav ul li:hover a, 
+			#nav ul li.sfhover a,
+			#nav ul li.current a {
+				color: #33b5e5;
+				text-shadow: none;			
+			}
+		
+		#nav ul li ul {
+			display: none;
+			position: absolute;
+			border-top: 0px;
+			padding: 3px 0px;
+			right: 0px;
+		}
+		
+		#nav ul li:hover ul, 
+		#nav ul li.sfhover ul, 
+		#nav ul li.current ul {
+			display: block;
+			background: url('../images/nav-bg.png') no-repeat;
+		}
+
+			#nav ul li:hover ul#department, 
+			#nav ul li.sfhover ul#department, 
+			#nav ul li.current ul#department {
+				background-position-x: -80px;
+			}
+
+			#nav ul li:hover ul#program, 
+			#nav ul li.sfhover ul#program,
+			#nav ul li.current ul#program {
+				background-position-x: -40px;
+				right: 75px
+
+			} 
+
+			#nav ul li:hover ul#master,
+			#nav ul li.sfhover ul#master,
+			#nav ul li.current ul#master {
+				background-position-x: center;
+				right: 160px;
+			} 
+
+			#nav ul li:hover ul#calendar, 
+			#nav ul li.sfhover ul#calendar,
+			#nav ul li.current ul#calendar {
+				background-position-x: 210px;
+			}
+
+            #nav ul li:hover ul#labs,
+            #nav ul li.sfhover ul#labs,
+            #nav ul li.current ul#labs {
+                background-position-x: 320px;
+            }
+
+			#nav ul li:hover ul li, 
+			#nav ul li.sfhover ul li, 
+			#nav ul li.current ul li {
+				padding: 0px 7px;
+				display: inline;
+				border-bottom: none;
+			}				
+				#nav ul li:hover ul li a, 
+				#nav ul li.sfhover ul li a, 
+				#nav ul li.current ul li a {
+					padding: 5px 0px;
+					display: inline-block;
+					font-size: 1.2em;
+					text-align: left;
+					color: #dcdcdc;
+				}
+					#nav ul li.current ul li.current a {
+						color: #33b5e5;
+					}
+					#nav ul li:hover ul li a:hover, 
+					#nav ul li.sfhover ul li a:hover {
+						color: #32b9e7;						
+					}
+					
+				#nav ul li:hover ul li .bottom, 
+				#nav ul li.sfhover ul li .bottom{
+					border-bottom: none;
+				}
+
+/* `Content
+-----------------------------------------------------------------------------------------------*/
+
+#wrap-content {
+	padding-top: 20px;
+	min-height: 600px;
+	padding-bottom:60px;
+	text-shadow: 1px 1px 1px #fff;
+}
+
+#mission {
+	margin: 40px 0;
+}
+
+	#mission h4 {
+		border-bottom: 1px solid #eee;
+		color: #38558e;
+	}
+
+	#mission ul {
+		padding-top: 8px;
+	}
+
+#mission ul li {
+	list-style-image: url('../images/list-type.png');
+	list-style-position: inside;
+	font-size: 1.3em;
+	margin-bottom: 9px;
+}
+
+	#mission ul li:hover {
+		color: #000;
+	}
+
+/* `Slider
+-----------------------------------------------------------------------------------------------*/
+	
+#wrap-slider {
+	box-shadow: 0px 0px 2px 1px #eee;
+	-o-box-shadow: 0px 0px 2px 1px #eee;
+	-moz-box-shadow: 0px 0px 2px 1px #eee;
+	-webkit-box-shadow: 0px 0px 2px 1px #eee;
+	margin-bottom: 5px;
+	border: 1px solid #dedede;
+	max-width: 458px;
+}
+
+#slider {
+	margin: 3px;
+	border: 1px solid #eee;
+	max-width: 450px;
+}
+
+/* `Faculty
+-----------------------------------------------------------------------------------------------*/
+
+#avatar {
+	width: 138px;
+	height: 189px;
+	border: 1px solid #f5f5f5;
+	box-shadow: 0 0 3px 1px rgba(0,0,0,0.5);
+	-o-box-shadow: 0 0 3px 1px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0 0 3px 1px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0 0 3px 1px rgba(0,0,0,0.5);
+	border-radius: 1px;
+}
+
+#contacts div {
+	margin-bottom: 5px;
+}
+
+#mail a,
+#given-courses ul li a,
+#research ul li {
+	font-size: 1.2em;
+	text-decoration: none;
+	color: #666;
+}
+	#mail a:hover,
+	#given-courses ul li a:hover {
+		color: #33b5e5;
+	}
+
+	#contacts img {
+		display: inline-block;
+		display: inline;
+		zoom: 1;
+		height: 30px;
+		width: 30px;
+		vertical-align: middle;
+		border: none;
+	}
+
+#given-courses ul li {
+	margin-bottom: 5px;
+}
+	
+#research ul li,
+#given-courses ul li,
+#syllabuses ul li {
+	list-style-image: url('../images/faculty-list.png');
+	list-style-position: inside;
+}
+	
+/* `Footer
+-----------------------------------------------------------------------------------------------*/
+
+#footer-wrap{
+	height: 50px;	
+	background: #d3cfca;
+	background: url('../images/footer.jpg') repeat-x;
+	border-top: 1px solid #ccc;
+	box-shadow: 0px 0px 3px 2px rgba( 224, 224, 224, 0.5 );
+	-o-box-shadow: 0px 0px 3px 2px rgba( 224, 224, 224, 0.5 );
+	-moz-box-shadow: 0px 0px 3px 2px rgba( 224, 224, 224, 0.5 );
+	-webkit-box-shadow: 0px 0px 3px 2px rgba( 224, 224, 224, 0.5 );
+	position: absolute;
+   	bottom: 0;
+   	width: 100%;
+}
+	#footer{
+		padding-top: 16px;
+	}
+		#footer p{
+			color: #282e4e;
+			text-shadow: 1px 1px #eee;
+			font-size: 1.2em;
+		}
+
+/* `Other
+-----------------------------------------------------------------------------------------------*/
+
+.image{
+	background: #fff;
+	border: 1px solid #eee;
+	border-radius: 1px;
+	padding: 1px;
+}
+	
+.center-text{
+	text-align: center;
+}
+
+.m-top { margin-top: 10px; }
+.m-bottom {	margin-bottom: 10px; }
+.m-left { margin-left: 10px; }
+.m-right { margin-right: 10px; }
+
+.p-top { padding-top: 10px; }
+.p-right { padding-right: 10px; }
+.p-bottom { padding-bottom: 10px; }
+.p-left { padding-left: 10px;}
+
+.f-left { float: left; }
+.f-right { float: right; }
+
+.line {
+	height: 0px;
+	border-bottom: 1px solid #eee;
+}
+
+/* `Table
+-----------------------------------------------------------------------------------------------*/
+
+table{
+	width: 100%;
+}
+
+table tr{
+	height: 25px;
+}
+
+table th{
+	height: 25px;
+	font-size: 1.3em;
+}
+
+table td{
+	height: 25px;
+	font-size: 1.3em;
+}
+
+#academic table{
+	width: 380px;
+	margin: 0px auto;
+	margin-bottom: 20px;
+}
+	#academic table th{
+		color: #696969;
+		font-size: 1.3em;
+		font-weight: bold;
+		text-align: center;
+		padding: 10px;
+	}
+	
+	#academic table tr td{
+		color: #808080;
+		padding: 8px 6px;
+	}
+	
+	#academic table tr{
+		border-bottom: 1px solid #ddd;
+	}
+
+	#academic table tbody tr:hover td {
+		color: #33b5e5;
+	}
+	
+	#academic .label{
+		width: 220px;
+	}
+	#academic table tr td span{
+		float: right;
+		margin-right: 4px;
+	}
+
+	#academic table tr.note td {
+		color: #333;
+		text-align: center;
+	}
+
+	#academic table tr.last {
+		border-bottom: none;
+	}
+
+#schedule table {
+	border: 1px solid #d3d3d3;
+	border-top-right-radius: 2px;
+	border-top-left-radius: 2px;
+}
+
+#schedule table thead{
+	background: url('../images/table-heading-bg.png') repeat-x;
+	border-top: #f1f2f4;
+	border-bottom: #f1f2f4
+}
+	
+#schedule table thead tr td{
+	font-weight: bold;
+	height: 45px;
+	width: 100px;
+	color: #696969;
+	text-shadow: 1px 1px 1px #fff;
+}
+
+#schedule table tr td{
+	border-collapse: collapse;
+	border: 1px solid #d3d3d3;
+	padding: 2px;
+	text-align: center;
+	font-size: 1.2em;
+	height: 47px; 
+	color: #808080;
+}
+
+#schedule table tbody tr:hover td{
+	background: #fff;
+	color: #33b5e5;
+}
+
+.odd{
+	background: #fafafa;
+	text-shadow: 1px 1px 1px #fff;
+}
+
+.even{
+	background: #f6f6f6;
+	border-top: 1px solid #fefefe;
+	text-shadow: 1px 1px 1px #fff;
+}
+
+/* Software table
+-----------------------------------------------------------------------------------------------*/
+
+
+#main-content {
+    margin-left: 130px;
+
+}
+
+
+.content-table tr td {
+    border: 1px solid #d3d3d3;
+    height: 23px;
+    text-align: center;
+
+}
+
+.title {
+    text-align: center;
+    margin-right: 60px;
+    margin-left: 50px;
+    font-size: 20px;
+}
+.elements {
+    font-size: 13px;
+    font-color: #A0A0A0;
+}
+#c-text     {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+
+/* `Button
+-----------------------------------------------------------------------------------------------*/
+
+button{
+	height: 28px;
+	width: 125px;
+	background: url('../images/menu-bg.jpg');
+    border: 1px solid #a1350d;
+	border-radius: 2px;
+}
+
+button:hover{
+	color: #f1f1f1;
+    border-color: #a1350d;
+    text-shadow: 1px 1px 1px #a1350d;
+    box-shadow: 0px 2px 2px #ccc;
+    -o-box-shadow: 0px 1px 2px 5px #ccc;
+    -moz-box-shadow: 1px 2px 1px #ccc;
+    -webkit-box-shadow:1px 2px 5px #ccc;
+}
+
+button a{
+	text-decoration: none;
+	color: #f5f5f5;
+}
+
+
+/* `Page
+-----------------------------------------------------------------------------------------------*/
+
+
+.page-heading {
+	color: #38558e;
+	text-shadow: none;
+}
+
+.heading,
+.page-heading {
+	padding: 5px 0px;
+}
+
+#recent div {
+	display: block;
+	min-height: 200px;
+}
+
+.more-link {
+	display: block;
+	margin-top: 10px;
+	text-decoration: none;
+	font-size: 1.3em;
+	color: #999;
+}
+	.more-link:hover {
+		color: #33b5e5;
+	}
+
+.image-left {
+float: left;
+margin: 0 20px 20px 0;
+opacity: 0.7;
+transition:0.6s;
+}
+
+.image-left:hover {
+float: left;
+margin: 0 20px 20px 0;
+opacity: 1;
+}

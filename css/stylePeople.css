@@ -1,0 +1,35 @@
+#wrapper {width:978px;margin:0 auto;padding:0;background:url(../images/people/bg.png) top center repeat-y;height:50%}
+
+.divider {background:url(../images/people/divider.gif) top left no-repeat;width:473px;height:15px;margin-left:25px;margin-top:10px}
+.dividerR {background:url(../images/people/dividerR.gif) top right no-repeat;width:430px; height:15px;margin-right:25px;margin-top:10px}
+<!--             -->
+#right-content {float:right;clear:none;margin-top:15px;margin-left:10px;margin-right:20px}
+#left-content {float:right;clear:none;width:427px;margin-right:0;margin-top:15px;height:280px;margin-left:10px}
+#news-rg {background:url(../images/people/boxR.png) top right no-repeat;width:430px;margin-top:1px}
+#welcome-rg {background:url(../images/people/boxR.png) top right no-repeat;width:430px}
+#welcome-bg {background:url(../images/people/box.png) top left no-repeat;width:480px}
+#news-bg {background:url(../images/people/box.png) top left no-repeat;width:480px;margin-top:1px}
+<!--             -->
+#sright-content {float:right;clear:none;margin-top:15px;margin-left:10px;margin-right:20px}
+#sleft-content {float:right;clear:none;width:427px;margin-right:0;margin-top:15px;height:280px;margin-left:10px}
+#snews-rg {background:url(../images/people/boxR.png) top right no-repeat;width:430px;margin-top:1px}
+#swelcome-rg {background:url(../images/people/boxR.png) top right no-repeat;width:430px}
+#swelcome-bg {background:url(../images/people/box.png) top left no-repeat;width:480px}
+#snews-bg {background:url(../images/people/box.png) top left no-repeat;width:480px;margin-top:1px}
+<!--             -->
+#tright-content {float:right;clear:none;margin-top:15px;margin-left:10px;margin-right:20px}
+#tleft-content {float:right;clear:none;width:427px;margin-right:0;margin-top:15px;height:280px;margin-left:10px}
+#tnews-rg {background:url(../images/people/boxR.png) top right no-repeat;width:430px;margin-top:1px}
+#twelcome-rg {background:url(../images/people/boxR.png) top right no-repeat;width:430px}
+#twelcome-bg {background:url(../images/people/box.png) top left no-repeat;width:480px}
+#tnews-bg {background:url(../images/people/box.png) top left no-repeat;width:480px;margin-top:1px}
+
+#fright-content {float:right;clear:none;margin-top:15px;margin-left:10px;margin-right:20px}
+#fleft-content {float:right;clear:none;width:427px;margin-right:0;margin-top:15px;height:280px;margin-left:10px}
+#fnews-rg {background:url(../images/people/boxR.png) top right no-repeat;width:430px;margin-top:1px}
+#fwelcome-rg {background:url(../images/people/boxR.png) top right no-repeat;width:430px}
+#fwelcome-bg {background:url(../images/people/box.png) top left no-repeat;width:480px}
+#fnews-bg {background:url(../images/people/box.png) top left no-repeat;width:480px;margin-top:1px}
+
+#footer div {padding:10px 25px 0 20px}
+a {color:#fff}
