@@ -1,13 +1,8 @@
 <!DOCTYPE html>
 
 
-<h1>Hello From Meder</h1>
 
-<h1>Hello From Meder</h1>
 <html>
-
-
-
 <head lang="eng">
 
     <meta charset="UTF-8">
@@ -27,7 +22,7 @@
 	<link rel="shortcut icon" href="images/favicon.png"/>
 
 
-
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
 	<link rel="stylesheet" type="text/css" href="css/reset.css" />
 
 	<link rel="stylesheet" type="text/css" href="css/text.css" />
@@ -38,183 +33,209 @@
 
 	<link rel="stylesheet" type="text/css" href="css/nivo-slider.css"/>
 
-	<link rel="stylesheet" type="text/css" href="css/nivo-theme.css"/>	
+	<link rel="stylesheet" type="text/css" href="css/nivo-theme.css"/>
 
+	<link rel="icon" href="img/core-img/favicon.ico">
 
+	<!-- Core Stylesheet -->
+	<link rel="stylesheet" href="style.css">
 
 </head>
 
 
 
 <body>
+<header class="header-area">
+	<!-- Navbar Area -->
+	<div class="musica-main-menu">
+		<div class="classy-nav-container breakpoint-off">
+			<div class="container-fluid">
+				<!-- Menu -->
+				<nav class="classy-navbar justify-content-between" id="musicaNav">
 
+					<!-- Nav brand -->
+					<a href="index.html" class="nav-brand"><img src="images/logo.png" alt=""></a>
+
+					<!-- Navbar Toggler -->
+					<div class="classy-navbar-toggler">
+						<span class="navbarToggler"><span></span><span></span><span></span></span>
+					</div>
+
+					<!-- Menu -->
+					<div class="classy-menu">
+
+						<!-- close btn -->
+						<div class="classycloseIcon">
+							<div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+						</div>
+
+						<!-- Nav Start -->
+						<div class="classynav">
+							<ul>
+								<li><a href="#">Department</a>
+									<ul class="dropdown">
+										<li><a href="faculty/faculty.html">Faculty</a></li>
+										<li><a href="department/news.html">News</a></li>
+
+										<li><a href="department/developments.html">Developments</a></li>
+
+										<li><a href="http://ic.iaau.edu.kg" target="_blank">ExPrograms</a></li>
+
+										<li><a href="department/prospective-students.html">ProStudents</a></li>
+
+										<li><a href="department/alumni.html">Alumni</a></li>
+
+										<li><a href="department/contact-us.html" >Contact Us</a></li>
+
+										<li><a href="department/info.html" >Info</a></li>
+									</ul>
+								</li>
+								<li><a href="#">Bachelor Program</a>
+									<ul class="dropdown">
+											<li><a href="program/courses.html">Courses</a></li>
+
+											<li><a href="program/research.html">Research</a></li>
+
+											<li><a href="program/degree-guide.html">DegreeGuide</a></li>
+											<li><a href="program/recent-diplomas.html">RecentDiplomas</a></li>
+
+											<li><a href="program/exam_rules.html">ExamRules</a></li>
+
+											<li><a href="program/admission.html">Admission</a></li>
+
+										</ul>
+								</li>
+								<li><a href="#">Master Degree</a>
+									<ul class="dropdown">
+										<li><a href="grad/overview.html">Overview</a></li>
+
+										<li><a href="grad/grad-courses.html">Program</a></li>
+
+										<li><a href="grad/grad-research.html">GraduateResearch</a></li>
+
+										<li><a href="grad/grad-admission.html">Admission</a></li>
+									</ul>
+								</li>
+								<li><a href="#">Calendar</a>
+									<ul class="dropdown">
+										<li><a href="http://iaau.edu.kg/view/public/pages/page.xhtml;jsessionid=TCIdhbOa1D1eOGAldtBq-N1i_kOX5KHgKE593l4n.sites?id=281" target="_blank">AcademicCalendar</a></li>
+
+										<li><a href="calendar/schedule-of-lectures.html">ScheduleOfLectures</a></li>
+
+										<li><a href="calendar/midterms.html">MidtermsSchedule</a></li>
+
+										<li><a href="calendar/finals.html">FinalsSchedule</a></li>
+
+										<li><a href="calendar/labs.html">LabsSchedule</a></li>
+									</ul>
+								</li>
+
+								<li><a href="#">Labs</a>
+									<ul class="dropdown">
+								<li><a href="http://its.iaau.edu.kg/policies/lab-rules.html" target="_blank">PolicyRegulations</a></li>
+
+								<li><a href="labs/software.html">Software</a></li>
+
+								<li><a href="department/contact-us.html">Contacts</a></li>
+								</li>
+									</ul>
+							</ul>
+
+							<!-- Social Button -->
+							<div class="top-social-info">
+								<a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+								<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+								<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+								<a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+								<a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a>
+								<a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+							</div>
+
+						</div>
+						<!-- Nav End -->
+					</div>
+				</nav>
+			</div>
+		</div>
+	</div>
+</header>
+<!-- ##### Header Area End ##### -->
+
+<!-- ##### Hero Area Start ##### -->
+<section class="hero-area">
+	<div class="hero-slides owl-carousel">
+
+		<!-- Single Hero Slide -->
+		<div class="single-hero-slide d-flex align-items-center justify-content-center">
+			<!-- Slide Img -->
+			<div class="slide-img bg-img" style="background-image: url(images/wall1.jpg);"></div>
+			<!-- Slide Content -->
+			<div class="hero-slides-content text-center">
+				<h2 data-animation="fadeInUp" data-delay="100ms">Java</h2>
+				<p data-animation="fadeInUp" data-delay="300ms">Spring Boot</p>
+			</div>
+			<!-- Big Text -->
+		</div>
+
+		<!-- Single Hero Slide -->
+		<div class="single-hero-slide d-flex align-items-center justify-content-center">
+			<!-- Slide Img -->
+			<div class="slide-img bg-img" style="background-image: url(images/wall2.jpg);"></div>
+			<!-- Slide Content -->
+			<div class="hero-slides-content text-center">
+				<h2 data-animation="fadeInUp" data-delay="100ms">Python</h2>
+				<p data-animation="fadeInUp" data-delay="300ms">Machine Learning</p>
+			</div>
+			<!-- Big Text -->
+			<h2 class="big-text">Colorlib</h2>
+		</div>
+
+		<!-- Single Hero Slide -->
+		<div class="single-hero-slide d-flex align-items-center justify-content-center">
+			<!-- Slide Img -->
+			<div class="slide-img bg-img" style="background-image: url(images/wall3.jpg);"></div>
+			<!-- Slide Content -->
+			<div class="hero-slides-content text-center">
+				<h2 data-animation="fadeInUp" data-delay="100ms">R-lang</h2>
+				<p data-animation="fadeInUp" data-delay="300ms">Statistics & Probability</p>
+			</div>
+			<!-- Big Text -->
+			<h2 class="big-text">Festival</h2>
+		</div>
+
+	</div>
+	<!-- bg gradients -->
+	<div class="bg-gradients"></div>
+
+	<!-- Slide Down -->
+	<div class="slide-down" id="scrollDown">
+		<h6>Slide Down</h6>
+		<div class="line"></div>
+	</div>
+</section>
     <div id="container">
-
-
-
-    <!-- HEADER -->
-
-    <div id="header-wrap">
-
-
-
-        <div id="header" class="container_16">
-
-            <div id="logo" class="grid_5">
-
-                <img alt="Computer Science Department" src="images/logo.png" />
-
-            </div>
-
-            <!--Navigation-->
-
-            <div id="nav" class="grid_11">
-
-                <ul>
-
-                    <li><a href="index.html">Home</a></li>
-
-                    <li>
-
-                        <a href="javascript:void(0)">Department</a>
-
-                        <ul id="department">
-
-                            <li><a href="department/news.html">News</a></li>
-
-                            <li><a href="department/developments.html">Developments</a></li>
-
-                            <li><a href="http://ic.iaau.edu.kg" target="_blank">Exchange Programs</a></li>
-
-                            <li><a href="department/prospective-students.html">Prospective Students</a></li>
-
-                            <li><a href="department/alumni.html">Alumni</a></li>
-
-                            <li><a href="department/contact-us.html" >Contact Us</a></li>
-
-                            <li><a href="department/info.html" >Info</a></li>
-
-                        </ul>
-
-                    </li>
-
-                    <li>
-
-                        <a href="javascript:void(0)">Bachelor Program</a>
-
-                        <ul id="program">
-
-                            <li><a href="program/courses.html">Courses</a></li>
-
-                            <li><a href="program/research.html">Research</a></li>
-
-                            <li><a href="program/degree-guide.html">Degree Guide</a></li>
-
-                            <li><a href="program/recent-diplomas.html">Recent Diplomas</a></li>
-
-                            <li><a href="program/exam_rules.html">Exam Rules</a></li>
-
-                            <li><a href="program/admission.html">Admission</a></li>
-
-                            <li><a href="program/faq.html">FAQ</a></li>
-
-                        </ul>
-
-                    </li>
-
-                    <li>
-
-                        <a href="javascript:void(0)">Master Degree</a>
-
-                        <ul id="master">
-
-                            <li><a href="grad/overview.html">Overview</a></li>
-
-                            <li><a href="grad/grad-courses.html">Program</a></li>
-
-                            <li><a href="grad/grad-research.html">Graduate Research</a></li>
-
-                            <li><a href="grad/grad-admission.html">Admission</a></li>
-
-                        </ul>
-
-                    </li>
-
-                    <li>
-
-                        <a href="javascript:void(0)" >Calendar</a>
-
-                        <ul id="calendar">
-
-                            <li><a href="http://iaau.edu.kg/view/public/pages/page.xhtml;jsessionid=TCIdhbOa1D1eOGAldtBq-N1i_kOX5KHgKE593l4n.sites?id=281" target="_blank">Academic Calendar</a></li>
-
-                            <li><a href="calendar/schedule-of-lectures.html">Schedule of Lectures</a></li>
-
-                            <li><a href="calendar/midterms.html">Midterms Schedule</a></li>
-
-                            <li><a href="calendar/finals.html">Finals Schedule</a></li>
-
-                            <li><a href="calendar/labs.html">Labs Schedule</a></li>
-
-                        </ul>
-
-                    </li>
-
-                    <li>
-
-                        <a href="faculty/faculty.html">Faculty</a>
-
-                    </li>
-
-                    <li>
-
-                        <a href="labs/labs.html">Labs</a>
-
-                        <ul id="labs">
-
-                            <li><a href="http://its.iaau.edu.kg/policies/lab-rules.html" target="_blank">Policy &amp;
-
-                                Regulations</a></li>
-
-                            <li><a href="labs/software.html">Software</a></li>
-
-                            <li><a href="department/contact-us.html">Contacts</a></li>
-
-                        </ul>
-
-                    </li>
-
-                </ul>
-
-            </div>
-
-        </div>
-
-    </div>
-
-	
 
     <!-- CONTENT -->
 
     <div id="wrap-content">
 
-	
+
 
         <div id="content" class="container_16">
 
-	
+
 
 	        <div id="left-content">
 
-	
+
 
     	    <div id="" class="grid_8 m-bottom m-top">
 
-			
+
 
 		<h3 class="m-bottom page-heading">What is Computer Science?</h3>
 
-		
+
 
 		<p class="main">
 
@@ -260,13 +281,13 @@
 
 	        <div id="mission" class="container_12 m-top f-left">
 
-	
+
 
 		    <div class="grid_4 m-bottom">
 
 			<h4>Our Vision</h4>
 
-	
+
 
 			<ul>
 
@@ -280,13 +301,13 @@
 
 		</div>
 
-		
+
 
 		    <div class="grid_4 m-bottom">
 
 			<h4>Our Mission</h4>
 
-	
+
 
 			<ul>
 
@@ -306,13 +327,13 @@
 
 		</div>
 
-				
+
 
 		    <div class="grid_4 m-bottom">
 
 			<h4>Our Merits and Principles</h4>
 
-		
+
 
 			<ul>
 
@@ -328,11 +349,11 @@
 
 		</div>
 
-	
+
 
         </div>
 
-	
+
 
 	    </div>
 
@@ -347,23 +368,93 @@
     <!-- END OF CONTENT -->
 
 
+		<footer class="footer-area section-padding-100-0">
+			<div class="container-fluid">
+				<div class="row">
 
-    <!-- FOOTER -->
+					<!-- Footer Widget Area -->
+					<div class="col-12 col-md-6 col-xl-3">
+						<div class="footer-widget-area mb-100">
+							<a href="#"><img src="images/logo.png" alt=""></a>
+							<p class="copywrite-text"><a href="#"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+								Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Brigada Team</a>
+								<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+							</p>
+						</div>
+					</div>
 
-    <div id="footer-wrap" >
+					<!-- Footer Widget Area -->
+					<div class="col-12 col-sm-4 col-xl-2">
+						<div class="footer-widget-area mb-100">
+							<div class="widget-title">
+								<h4>Department</h4>
+							</div>
+							<nav>
+								<ul class="footer-nav">
+									<li><a href="faculty/faculty.html">Faculty</a></li>
+									<li><a href="department/news.html">News</a></li>
+									<li><a href="department/contact-us.html" >Contact Us</a></li>
+									<li><a href="department/info.html" >Info</a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
 
-		
+					<!-- Footer Widget Area -->
+					<div class="col-12 col-sm-4 col-xl-2">
+						<div class="footer-widget-area mb-100">
+							<div class="widget-title">
+								<h4>Calendar</h4>
+							</div>
+							<nav>
+								<ul class="footer-nav">
+									<li><a href="calendar/schedule-of-lectures.html">Schedule Of Lectures</a></li>
 
-		<div id="footer" class="container_12">
+									<li><a href="calendar/midterms.html">Midterms Schedule</a></li>
 
-			<p class="f-left">&copy; 2017 Computer Science Department</p>
-            <p class="f-right">Ala-Too International University</p>
+									<li><a href="calendar/finals.html">Finals Schedule</a></li>
 
-		</div>
+									<li><a href="calendar/labs.html">Labs Schedule</a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
 
-	
+					<!-- Footer Widget Area -->
+					<div class="col-12 col-sm-4 col-xl-2">
+						<div class="footer-widget-area mb-100">
+							<div class="widget-title">
+								<h4>Labs</h4>
+							</div>
+							<nav>
+								<ul class="footer-nav">
+									<li><a href="http://its.iaau.edu.kg/policies/lab-rules.html" target="_blank">PolicyRegulations</a></li>
 
-	</div>
+									<li><a href="labs/software.html">Software</a></li>
+
+									<li><a href="department/contact-us.html">Contacts</a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+
+					<!-- Footer Widget Area -->
+					<div class="col-12 col-md-6 col-xl-3">
+						<div class="footer-widget-area mb-100">
+							<div class="widget-title">
+								<h4>Subscribe</h4>
+							</div>
+							<form action="#" method="post" class="subscribe-form">
+								<input type="email" name="subscribe-email" id="subscribeemail">
+								<button type="submit">subscribe</button>
+							</form>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</footer>
+
 
     <!-- END OF FOOTER -->
 
@@ -418,8 +509,17 @@
 		  ga('send', 'pageview');
 
 	</script>
-
-	
+		<script src="js/jquery/jquery-2.2.4.min.js"></script>
+		<!-- Popper js -->
+		<script src="js/bootstrap/popper.min.js"></script>
+		<!-- Bootstrap js -->
+		<script src="js/bootstrap/bootstrap.min.js"></script>
+		<!-- All Plugins js -->
+		<script src="js/plugins/plugins.js"></script>
+		<!-- Active js -->
+		<script src="js/active.js"></script>
+	</div>
+	</div>
 
 </body>
 
