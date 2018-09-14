@@ -4,5 +4,5 @@ Redesign the existing Computer Science department's website. The mini project's 
 # Designer,Black worker: Nadyr
 # JS developer: Tansuluu
 # Content manager, problem solver: Meder
-# Content manager, tester: Nurdin
+# Content manager, QA tester: Nurdin
 # link to site: https://tansuluu.github.io/com
