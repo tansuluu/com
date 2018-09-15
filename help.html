@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<h3>Hello! How can I help you? Please choose the options:</h3>
+<button><a href="">FAQ</a></button>
+<button onclick="myFunction()">Get register</button>
+
+<div id="cont" style="display: none">
+    <label>Semester</label>
+    <input type="radio" name="semester" value="fall">Fall
+    <input type="radio" name="semester" value="spring">Spring
+    <label>Grade</label>
+    <input type="radio" name="grade" value="1">1
+    <input type="radio" name="grade" value="2">2
+    <input type="radio" name="grade" value="3">3
+    <input type="radio" name="grade" value="4">4
+    <button onclick="checks()">ok</button>
+    <div id="conten"></div>
+</div>
+<script>
+    var rem="";
+    function myFunction() {
+        var x = document.getElementById("cont").style.display;
+        if(x=="none"){
+            document.getElementById("cont").style.display="block";
+        }
+        else
+            document.getElementById("cont").style.display="none";
+    }
+    function checks(){
+        var radios = document.getElementsByName('semester');
+
+        for (var i = 0, length = radios.length; i < length; i++)
+        {
+            if (radios[i].checked)
+            {
+                // do whatever you want with the checked radio
+                rem=radios[i].value;
+
+                // only one radio can be logically checked, don't check the rest
+                break;
+            }
+        }
+        var grades = document.getElementsByName('grade');
+        for (var i = 0, length = grades.length; i < length; i++)
+
+        {
+            if (grades[i].checked)
+            {
+                // do whatever you want with the checked radio
+                if(grades[i].value==1){
+                    if(rem=="fall"){
+                        $("#conten").append("<ul>Subjects is needed to take" +
+                            "<li>Calculus 1</li>" +
+                            "<li>Physics 1</li>" +
+                            "<li>Introduction to Engineering & CS </li>" +
+                            "<li>Programming Languages - 1</li>" +
+                            "<li>Russian Language - 1 </li>");
+
+                    }
+                }
+
+                // only one radio can be logically checked, don't check the rest
+                break;
+            }
+        }
+    }
+</script>
+</body>
+</html>
