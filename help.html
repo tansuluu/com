@@ -13,7 +13,9 @@
         .faill{
             width: 400px;
         }
-
+        .newClass{
+            display: none;
+        }
     </style>
 </head>
 <body>
@@ -176,13 +178,16 @@
                             "    </thead>\n" +
                             "    <tbody>\n" +
                             "      <tr>\n" +
-                            "        <td><input type='checkbox' value='4' name='fails' value='calculus1'></td><td>Calculus-1</td>" +
+                            "        <td><input type='checkbox'  name='fails' value='calculus2' ></td><td>Calculus-2</td>" +
                             "      </tr>\n" +
                             "      <tr>\n" +
-                            "        <td><input type='checkbox' value='4' name='fails' value='physics1'></td><td>Physics 1</td>" +
+                            "        <td><input type='checkbox'  name='fails' value='physics2' ></td><td>Physics 2</td>" +
                             "      </tr>\n" +
                             "      <tr>\n" +
-                            "        <td><input type='checkbox' value='2' name='fails' value='tlang1' ></td><td>Turkish Language - 1</td>" +
+                            "        <td><input type='checkbox'  name='fails' value='tlang1' ></td><td>Turkish Language - 1</td>" +
+                            "      </tr>\n" +
+                            "      <tr>\n" +
+                            "        <td><input type='checkbox'  name='fails' value='pl2' ></td><td>Programming Languages - 2</td>" +
                             "      </tr>\n" +
                             "      <tr>\n" +
                             "        <button onclick='subjectsCanTake()'>OK</button> " +
@@ -197,41 +202,44 @@
                             "      </tr>\n" +
                             "    </thead>\n" +
                             "    <tbody>\n" +
-                            "      <tr>\n" +
-                            "        <td><input type='checkbox' value='4' name='first' onclick='calcul()' class='cal'></td><td>Calculus-2</td><td>4</td><td>4</td>" +
+                            "      <tr id='oop'>\n" +
+                            "        <td><input type='checkbox' value='4' name='first' onclick='calcul()' ></td><td>1 Object Oriented Programming </td><td>4</td><td>4</td>" +
                             "      </tr>\n" +
                             "      <tr>\n" +
-                            "        <td><input type='checkbox' value='4' name='first' onclick='calcul()'></td><td>Physics 2</td><td>4</td><td>4</td>" +
+                            "        <td><input type='checkbox' value='4' name='first' onclick='calcul()'></td><td>Web Technologies</td><td>4</td><td>4</td>" +
                             "      </tr>\n" +
                             "      <tr>\n" +
-                            "        <td><input type='checkbox' value='4' name='first' onclick='calcul()'></td><td>Engineering Computer Graphics</td><td>4</td><td>4</td>" +
+                            "        <td><input type='checkbox' value='4' name='first' onclick='calcul()'></td><td>Descrete Mathematics</td><td>4</td><td>4</td>" +
+                            "      </tr>\n" +
+                            "      <tr id='db'>\n" +
+                            "        <td><input type='checkbox' value='6' name='first' onclick='calcul()'></td><td>Database Systems </td><td>6</td><td>6</td>" +
+                            "      </tr>\n" +
+                            "      <tr id='ell'>\n" +
+                            "        <td><input type='checkbox' value='4' name='first' onclick='calcul()'></td><td> Electrotechnics & Electronics</td><td>4</td><td>4</td>" +
                             "      </tr>\n" +
                             "      <tr>\n" +
-                            "        <td><input type='checkbox' value='6' name='first' onclick='calcul()'></td><td>Programming Languages - 2</td><td>6</td><td>6</td>" +
-                            "      </tr>\n" +
-                            "      <tr>\n" +
-                            "        <td><input type='checkbox' value='4' name='first' onclick='calcul()'></td><td>Russian Language - 2</td><td>4</td><td>4</td>" +
-                            "      </tr>\n" +
-                            "      <tr>\n" +
-                            "        <td><input type='checkbox' value='4' name='first' onclick='calcul()'></td><td>ENG Language - 2</td><td>4</td><td>4</td>" +
+                            "        <td><input type='checkbox' value='4' name='first' onclick='calcul()'></td><td>Kyrgyz Language & Literature - 1 </td><td>4</td><td>4</td>" +
                             "      </tr>\n" +
                             "      <tr>\n" +
                             "        <td><input type='checkbox' value='2' name='first' onclick='calcul()'></td><td> Georgraphy of KGZ (State Examination)</td><td>2</td><td>2</td>" +
                             "      </tr>\n" +
-                            "      <tr>\n" +
-                            "        <td><input type='checkbox' value='2' name='first' onclick='calcul()'></td><td>Turkish Language - 2</td><td>2</td><td>2</td>" +
+                            "      <tr id='tl'>\n" +
+                            "        <td><input type='checkbox' value='2' name='first' onclick='calcul()'></td><td>Turkish Language - 1</td><td>0</td><td>2</td>" +
                             "      </tr>\n" +
                             "      <tr>\n" +
-                            "        <td><input type='checkbox' value='2' name='first' onclick='calcul()'></td><td>Physical Culture - 2</td><td>0</td><td>2</td>" +
+                            "        <td><input type='checkbox' value='2' name='first' onclick='calcul()'></td><td>Physical Culture - 3</td><td>0</td><td>2</td>" +
                             "      </tr>\n" +
                             "      <tr>\n" +
                             "       <td>You may take subjects from 2nd grade</td><td></td><td></td><td></td>" +
                             "      </tr>\n" +
                             "      <tr>\n" +
-                            "        <td><input type='checkbox' value='4' name='first' onclick='calcul()'></td><td>Kyrgyz Language & Literature - 2 </td><td>4</td><td>4</td>" +
+                            "        <td><input type='checkbox' value='2' name='first' onclick='calcul()'></td><td>Introduction to Enterpreunership </td><td>2</td><td>2</td>" +
+                            "      </tr>\n" +
+                            "      <tr id='calc'>\n" +
+                            "        <td><input type='checkbox' value='4' name='first' onclick='calcul()'></td><td>Probability and Statistics </td><td>4</td><td>4</td>" +
                             "      </tr>\n" +
                             "      <tr>\n" +
-                            "        <td><input type='checkbox' value='4' name='first' onclick='calcul()'></td><td>History</td><td>4</td><td>4</td>" +
+                            "        <td><input type='checkbox' value='6' name='first' onclick='calcul()'></td><td>Comp. Networks & Telecommunication </td><td>6</td><td>6</td>" +
                             "      </tr>\n" +
                             "    </tbody>\n" +
                             "  </table>");
@@ -309,10 +317,26 @@
 
     }
     function subjectsCanTake(){
+        document.getElementById("calc").style.display="table-row";
+        document.getElementById("ell").style.display="table-row";
+        document.getElementById("tl").style.display="table-row";
+        document.getElementById("oop").style.display="table-row";
         var fails = document.getElementsByName('fails');
         for (i = 0; i < fails.length; i++) {
             if(fails[i].checked) {
-                if
+                if(fails[i].value=="calculus2"){
+                    document.getElementById("calc").style.display="none";
+                }
+                else if(fails[i].value=="physics2"){
+                    document.getElementById("ell").style.display="none";
+                }
+                else if(fails[i].value=="tlang1"){
+                    document.getElementById("tl").style.display="none";
+                }
+                else if(fails[i].value=="pl2"){
+                    document.getElementById("oop").style.display="none";
+                }
+
             }
         }
     }
