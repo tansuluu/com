@@ -6,7 +6,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+    <style>
+        body{
+            padding: 2px 60px;
+        }
+    </style>
 </head>
 <body>
 <h3>Hello! How can I help you? Please choose the options:</h3>
@@ -58,20 +62,136 @@
                 // do whatever you want with the checked radio
                 if(grades[i].value==1){
                     if(rem=="fall"){
-                        $("#conten").append("<ul>Subjects is needed to take" +
-                            "<li>Calculus 1</li>" +
-                            "<li>Physics 1</li>" +
-                            "<li>Introduction to Engineering & CS </li>" +
-                            "<li>Programming Languages - 1</li>" +
-                            "<li>Russian Language - 1 </li>");
+                        $("#conten").text("");
+                        $("#conten").append("<table class=\"table table-condensed\">\n" +
+                            "    <thead>\n" +
+                            "      <tr>\n" +
+                            "        <th>Choose</th><th>Subject</th><th>Credits</th><th>Hours</th>\n" +
+                            "      </tr>\n" +
+                            "    </thead>\n" +
+                            "    <tbody>\n" +
+                            "      <tr>\n" +
+                            "        <td><input type='checkbox' value='4' name='first' onclick='calcul()'></td><td>Calculus-1</td><td>4</td><td>4</td>" +
+                            "      </tr>\n" +
+                            "      <tr>\n" +
+                            "        <td><input type='checkbox' value='4' name='first' onclick='calcul()'></td><td>Physics 1</td><td>4</td><td>4</td>" +
+                            "      </tr>\n" +
+                            "      <tr>\n" +
+                            "        <td><input type='checkbox' value='4' name='first' onclick='calcul()'></td><td>Introduction to Engineering & CS</td><td>4</td><td>4</td>" +
+                            "      </tr>\n" +
+                            "      <tr>\n" +
+                            "        <td><input type='checkbox' value='6' name='first' onclick='calcul()'></td><td>Programming Languages - 1</td><td>6</td><td>6</td>" +
+                            "      </tr>\n" +
+                            "      <tr>\n" +
+                            "        <td><input type='checkbox' value='4' name='first' onclick='calcul()'></td><td>Russian Language - 1</td><td>4</td><td>4</td>" +
+                            "      </tr>\n" +
+                            "      <tr>\n" +
+                            "        <td><input type='checkbox' value='4' name='first' onclick='calcul()'></td><td>ENG Language - 1</td><td>4</td><td>4</td>" +
+                            "      </tr>\n" +
+                            "      <tr>\n" +
+                            "        <td><input type='checkbox' value='2' name='first' onclick='calcul()'></td><td>Ecology</td><td>2</td><td>2</td>" +
+                            "      </tr>\n" +
+                            "      <tr>\n" +
+                            "        <td><input type='checkbox' value='2' name='first' onclick='calcul()'></td><td>Turkish Language - 1</td><td>2</td><td>2</td>" +
+                            "      </tr>\n" +
+                            "      <tr>\n" +
+                            "        <td><input type='checkbox' value='2' name='first' onclick='calcul()'></td><td>Physical Culture - 1</td><td>0</td><td>2</td>" +
+                            "      </tr>\n" +
+                            "      <tr>\n" +
+                            "       <td>You may take subjects from 2nd grade</td><td></td><td></td><td></td>" +
+                            "      </tr>\n" +
+                            "      <tr>\n" +
+                            "        <td><input type='checkbox' value='4' name='first' onclick='calcul()'></td><td>Kyrgyz Language & Literature - 1 </td><td>4</td><td>4</td>" +
+                            "      </tr>\n" +
+                            "      <tr>\n" +
+                            "        <td><input type='checkbox' value='6' name='first' onclick='calcul()'></td><td>Web Technologies</td><td>6</td><td>6</td>" +
+                            "      </tr>\n" +
+                            "    </tbody>\n" +
+                            "  </table>");
 
+                    }
+                    else if(rem=="spring"){
+                        $("#conten").text("");
+                        $("#conten").append("<table class=\"table table-condensed\">\n" +
+                            "    <thead>\n" +
+                            "      <tr>\n" +
+                            "        <th>Choose</th><th>Subject</th><th>Credits</th><th>Hours</th>\n" +
+                            "      </tr>\n" +
+                            "    </thead>\n" +
+                            "    <tbody>\n" +
+                            "      <tr>\n" +
+                            "        <td><input type='checkbox' value='4' name='first' onclick='calcul()'></td><td>Calculus-2</td><td>4</td><td>4</td>" +
+                            "      </tr>\n" +
+                            "      <tr>\n" +
+                            "        <td><input type='checkbox' value='4' name='first' onclick='calcul()'></td><td>Physics 2</td><td>4</td><td>4</td>" +
+                            "      </tr>\n" +
+                            "      <tr>\n" +
+                            "        <td><input type='checkbox' value='4' name='first' onclick='calcul()'></td><td>Introduction to Engineering & CS</td><td>4</td><td>4</td>" +
+                            "      </tr>\n" +
+                            "      <tr>\n" +
+                            "        <td><input type='checkbox' value='6' name='first' onclick='calcul()'></td><td>Programming Languages - 2</td><td>6</td><td>6</td>" +
+                            "      </tr>\n" +
+                            "      <tr>\n" +
+                            "        <td><input type='checkbox' value='4' name='first' onclick='calcul()'></td><td>Russian Language - 2</td><td>4</td><td>4</td>" +
+                            "      </tr>\n" +
+                            "      <tr>\n" +
+                            "        <td><input type='checkbox' value='4' name='first' onclick='calcul()'></td><td>ENG Language - 2</td><td>4</td><td>4</td>" +
+                            "      </tr>\n" +
+                            "      <tr>\n" +
+                            "        <td><input type='checkbox' value='2' name='first' onclick='calcul()'></td><td>Ecology</td><td>2</td><td>2</td>" +
+                            "      </tr>\n" +
+                            "      <tr>\n" +
+                            "        <td><input type='checkbox' value='2' name='first' onclick='calcul()'></td><td>Turkish Language - 1</td><td>2</td><td>2</td>" +
+                            "      </tr>\n" +
+                            "      <tr>\n" +
+                            "        <td><input type='checkbox' value='2' name='first' onclick='calcul()'></td><td>Physical Culture - 1</td><td>0</td><td>2</td>" +
+                            "      </tr>\n" +
+                            "      <tr>\n" +
+                            "       <td>You may take subjects from 2nd grade</td><td></td><td></td><td></td>" +
+                            "      </tr>\n" +
+                            "      <tr>\n" +
+                            "        <td><input type='checkbox' value='4' name='first' onclick='calcul()'></td><td>Kyrgyz Language & Literature - 2 </td><td>4</td><td>4</td>" +
+                            "      </tr>\n" +
+                            "      <tr>\n" +
+                            "        <td><input type='checkbox' value='6' name='first' onclick='calcul()'></td><td>History</td><td>6</td><td>6</td>" +
+                            "      </tr>\n" +
+                            "    </tbody>\n" +
+                            "  </table>");
+                        $("#conten").append("<h4>Subjects is needed to take" +
+                            "<li>Programming Languages - 2 </li>" +
+                            "<li>Calculus - 2 </li>" +
+                            "<li>Physics - 2  </li>" +
+                            "<li>Engineering Computer Graphics </li>" +
+                            "<li>Russian Language - 2 </li>" +
+                            "<li>ENG Language - 2</li>" +
+                            "<li>Georgraphy of KGZ (State Examination)</li>" +
+                            "<li>Turkish Language - 2</li>" +
+                            "<li>Physical Culture - 2</li>");
+
+                    }
                     }
                 }
 
                 // only one radio can be logically checked, don't check the rest
                 break;
             }
+    }
+    function calcul(){
+        var firsts = document.getElementsByName('first');
+        var txt = 0;
+        var i;
+        for (i = 0; i < firsts.length; i++) {
+            if(firsts[i].checked) {
+                txt = txt + parseInt(firsts[i].value);
+            }
         }
+        $(".notice").text("");
+        $("#conten").append("<h3 id='credits'></h3>");
+        $("#credits").text(txt);
+        if(txt>39){
+            $("#conten").append("<h5 style='color: red' class='notice'>Notice you can take only 39 hours in one semester!</h5>");
+        }
+
     }
 </script>
 </body>
