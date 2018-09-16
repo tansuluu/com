@@ -168,8 +168,9 @@
                     }
                 if(grades[i].value==2){
 
-                    $("#conten").text("");
+
                     if(rem=="fall"){
+                        $("#conten").text("");
                         $("#conten").append("<div class='faill'><table class='table table-condensed'>" +
                             "    <thead>\n" +
                             "      <tr>\n" +
@@ -246,6 +247,40 @@
 
                     }
                     else if(rem=="spring"){
+                        $("#conten").text("");
+                        $("#conten").append("<div class='faill'><table class='table table-condensed'>" +
+                            "    <thead>\n" +
+                            "      <tr>\n" +
+                            "        <th>Choose subjects that</th><th>you have failed</th>\n" +
+                            "      </tr>\n" +
+                            "    </thead>\n" +
+                            "    <tbody>\n" +
+                            "      <tr>\n" +
+                            "        <td><input type='checkbox'  name='fails' value='desc' ></td><td>Descrete Mathematics </td>" +
+                            "      </tr>\n" +
+                            "      <tr>\n" +
+                            "        <td><input type='checkbox'  name='fails' value='physics2' ></td><td>Physics 2</td>" +
+                            "      </tr>\n" +
+                            "      <tr>\n" +
+                            "        <td><input type='checkbox'  name='fails' value='tlang1' ></td><td>Turkish Language - 1</td>" +
+                            "      </tr>\n" +
+                            "      <tr>\n" +
+                            "        <td><input type='checkbox'  name='fails' value='pl2' ></td><td>Programming Languages - 2</td>" +
+                            "      </tr>\n" +
+                            "      <tr>\n" +
+                            "        <td><input type='checkbox'  name='fails' value='pl2' ></td><td>Programming Languages - 2</td>" +
+                            "      </tr>\n" +
+                            "      <tr>\n" +
+                            "        <td><input type='checkbox'  name='fails' value='pl2' ></td><td>Programming Languages - 2</td>" +
+                            "      </tr>\n" +
+                            "      <tr>\n" +
+                            "        <td><input type='checkbox'  name='fails' value='pl2' ></td><td>Programming Languages - 2</td>" +
+                            "      </tr>\n" +
+                            "      <tr>\n" +
+                            "        <button onclick='subjectsCanTake()'>OK</button> " +
+                            "      </tr>\n" +
+                            "    </tbody>\n" +
+                            "  </table></div>");
                         $("#conten").append("<table class=\"table table-condensed\">\n" +
                             "    <thead>\n" +
                             "      <tr>\n" +
@@ -299,24 +334,27 @@
 
             }
     }
+
     function calcul(){
         var firsts = document.getElementsByName('first');
-        var txt = 0;
         var i;
+        var txt=0;
         for (i = 0; i < firsts.length; i++) {
             if(firsts[i].checked) {
                 txt = txt + parseInt(firsts[i].value);
             }
         }
         $(".notice").text("");
-        $("#conten").append("<h3 id='credits'></h3>");
-        $("#credits").text(txt);
+        $("#conten").append("<h3 id='credits'> </h3>");
+        $("#credits").text(txt+" hours");
         if(txt>39){
             $("#conten").append("<h5 style='color: red' class='notice'>Notice you can take only 39 hours in one semester!</h5>");
         }
 
     }
     function subjectsCanTake(){
+        var firsts = document.getElementsByName('first');
+
         document.getElementById("calc").style.display="table-row";
         document.getElementById("ell").style.display="table-row";
         document.getElementById("tl").style.display="table-row";
@@ -339,6 +377,13 @@
 
             }
         }
+
+        for (var i = 0; i < firsts.length; i++) {
+            firsts[i].checked = false;
+        }
+        calcul();
+        $("#credits").text("0 hours");
+
     }
 </script>
 </body>
