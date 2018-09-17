@@ -10,69 +10,69 @@ Redesign the existing Computer Science department's website. The mini project's 
 
 
 ├── calendar <br>
-│   ├── academic-calendar.html
-│   ├── finals.html
-│   ├── labs.html
-│   ├── midterms.html
-│   └── schedule-of-lectures.html
-├── department
-│   ├── alumni.html
-│   ├── contacts.jpg
-│   ├── contact-us.html
-│   ├── developments.html
-│   ├── graduates.html
-│   ├── info.html
-│   ├── news.html
-│   └── prospective-students.html
-├── faculty
-│   ├── a.bondarev.html
-│   ├── faculty.html
-│   ├── m.muhammed.html
-│   ├── m.omuraliev.html
-│   ├── n.shaidullaev.html
-│   └── s.erdolatov.html
-├── grad
-│   ├── grad-admission.html
-│   ├── grad-courses.html
-│   ├── grad-research.html
-│   └── overview.html
-├── help.html
-index.html
-index.html
-│   ├── labs.html
-│   ├── policy.html
-│   └── software.html
-├── program
-│   ├── admission.html
-│   ├── courses.html
-│   ├── degree_details.html
-│   ├── degree-guide.html
-│   ├── exam_rules.html
-│   ├── faq.html
-│   ├── recent-diplomas.html
-│   ├── research.html
-│   └── thesis
-│       ├── adminreg.html
-│       ├── campus.html
-│       ├── checklist.html
-│       ├── completion.html
-│       ├── copyright.html
-│       ├── doc-specs.html
-│       ├── grade.html
-│       ├── intro.html
-│       ├── masterworks.html
-│       ├── prizing.html
-│       ├── proposal-agreement-letter.html
-│       ├── proposal.html
-│       ├── release-letter.html
-│       ├── sample-abstract.html
-│       ├── sample-title.html
-│       ├── sample-title-student.html
-│       ├── start.html
-│       ├── submitting.html
-│       ├── supervisor-topic.html
-│       ├── template.html
-│       ├── thesis-spec.html
-│       ├── timing.html
-│       └── topic.html
+│   ├── academic-calendar.html<br>
+│   ├── finals.html<br>
+│   ├── labs.html<br>
+│   ├── midterms.html<br>
+│   └── schedule-of-lectures.html<br>
+├── department<br>
+│   ├── alumni.html<br>
+│   ├── contacts.jpg<br>
+│   ├── contact-us.html<br>
+│   ├── developments.html<br>
+│   ├── graduates.html<br>
+│   ├── info.html<br>
+│   ├── news.html<br>
+│   └── prospective-students.html<br>
+├── faculty<br>
+│   ├── a.bondarev.html<br>
+│   ├── faculty.html<br>
+│   ├── m.muhammed.html<br>
+│   ├── m.omuraliev.html<br>
+│   ├── n.shaidullaev.html<br>
+│   └── s.erdolatov.html<br>
+├── grad<br>
+│   ├── grad-admission.html<br>
+│   ├── grad-courses.html<br>
+│   ├── grad-research.html<br>
+│   └── overview.html<br>
+├── help.html<br>
+index.html<br>
+index.html<br>
+│   ├── labs.html<br>
+│   ├── policy.html<br>
+│   └── software.html<br>
+├── program<br>
+│   ├── admission.html<br>
+│   ├── courses.html<br>
+│   ├── degree_details.html<br>
+│   ├── degree-guide.html<br>
+│   ├── exam_rules.html<br>
+│   ├── faq.html<br>
+│   ├── recent-diplomas.html<br>
+│   ├── research.html<br>
+│   └── thesis<br>
+│       ├── adminreg.html<br>
+│       ├── campus.html<br>
+│       ├── checklist.html<br>
+│       ├── completion.html<br>
+│       ├── copyright.html<br>
+│       ├── doc-specs.html<br>
+│       ├── grade.html<br>
+│       ├── intro.html<br>
+│       ├── masterworks.html<br>
+│       ├── prizing.html<br>
+│       ├── proposal-agreement-letter.html<br>
+│       ├── proposal.html<br>
+│       ├── release-letter.html<br>
+│       ├── sample-abstract.html<br>
+│       ├── sample-title.html<br>
+│       ├── sample-title-student.html<br>
+│       ├── start.html<br>
+│       ├── submitting.html<br>
+│       ├── supervisor-topic.html<br>
+│       ├── template.html<br>
+│       ├── thesis-spec.html<br>
+│       ├── timing.html<br>
+│       └── topic.html<br>
 
