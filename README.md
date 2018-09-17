@@ -9,7 +9,7 @@ Redesign the existing Computer Science department's website. The mini project's 
 
 
 
-├── calendar
+├── calendar <br>
 │   ├── academic-calendar.html
 │   ├── finals.html
 │   ├── labs.html
