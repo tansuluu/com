@@ -23,6 +23,8 @@
 
     <!-- Core Stylesheet -->
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <style>
 
@@ -164,7 +166,7 @@
     </section>
     <section style="margin:10px 100px">
     <h3>Hello! How can I help you? Please choose the options:</h3>
-    <button onclick="func()" style="margin-right: 60px; margin-top: 15px">FAQ</button>
+    <button type="button" class="btn btn-info active" onclick="func()" style="margin-right: 60px; margin-top: 15px">FAQ</button>
     <div  id="faq" style="display: none; margin-top: 15px">
         <div class="container">
             <h2>Frequently Asked Questions</h2>
@@ -206,7 +208,7 @@
         </div>
 
     </div>
-    <button onclick="myFunction()">Get register</button>
+    <button type="button" class="btn btn-info active" style="margin-top: 18px" onclick="myFunction()">Get register</button>
     <div id="cont" style="display: none; margin-top: 15px">
         <label>Semester</label><label style="margin-left: 150px">Grade</label><br>
         <input type="radio" name="semester" value="fall"> Fall
@@ -215,11 +217,11 @@
         <input type="radio" name="grade" style="margin-left: 100px" value="1"> 1
         <input type="radio" name="grade" style="margin-left: 8px" value="2"> 2
         <input type="radio" name="grade" style="margin-left: 8px" value="3"> 3
-        <button onclick="checks()" style="margin-left: 80px">OK</button>
+        <button type="button" class="btn btn-info active" onclick="checks()" style="margin-left: 80px">OK</button>
         <div id="conten" style="margin-top: 20px"></div>
     </div>
 
-        <button onclick="my_func()" style="margin-right: 60px; margin-top: 15px; margin-left: 60px">Useful links</button>
+        <button type="button" class="btn btn-info active" onclick="my_func()" style="margin-right: 60px; margin-top: 15px; margin-left: 60px">Useful links</button>
         <div  id="useful_link" style="display: none; margin-top: 15px">
 
             <div class="container">
@@ -985,5 +987,6 @@
     <script src="js/active.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 </body>
 </html>
