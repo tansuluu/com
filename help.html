@@ -23,6 +23,8 @@
 
     <!-- Core Stylesheet -->
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <style>
 
@@ -164,7 +166,7 @@
     </section>
     <section style="margin:10px 100px">
     <h3>Hello! How can I help you? Please choose the options:</h3>
-    <button onclick="func()" style="margin-right: 60px; margin-top: 15px">FAQ</button>
+    <button type="button" class="btn btn-info active" onclick="func()" style="margin-right: 60px; margin-top: 15px; padding-bottom: 30px">FAQ</button>
     <div  id="faq" style="display: none; margin-top: 15px">
         <div class="container">
             <h2>Frequently Asked Questions</h2>
@@ -206,7 +208,7 @@
         </div>
 
     </div>
-    <button onclick="myFunction()">Get register</button>
+    <button type="button" class="btn btn-info active" style="margin-top: 18px; padding-bottom: 30px" onclick="myFunction()">Get register</button>
     <div id="cont" style="display: none; margin-top: 15px">
         <label>Semester</label><label style="margin-left: 150px">Grade</label><br>
         <input type="radio" name="semester" value="fall"> Fall
@@ -215,9 +217,63 @@
         <input type="radio" name="grade" style="margin-left: 100px" value="1"> 1
         <input type="radio" name="grade" style="margin-left: 8px" value="2"> 2
         <input type="radio" name="grade" style="margin-left: 8px" value="3"> 3
-        <button onclick="checks()" style="margin-left: 80px">OK</button>
+        <button type="button" class="btn btn-info active" onclick="checks()" style="margin-left: 80px">OK</button>
         <div id="conten" style="margin-top: 20px"></div>
     </div>
+
+        <button type="button" class="btn btn-info active" onclick="my_func()" style="margin-right: 60px; margin-top: 15px; margin-left: 60px; padding-bottom: 30px">Useful links</button>
+        <div  id="useful_link" style="display: none; margin-top: 15px">
+
+            <div class="container">
+                <h2>Useful links</h2>
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">OCS</a>
+                            </h4>
+                        </div>
+                        <div id="collapse1" class="panel-collapse collapse in">
+                            <div class="panel-body"><a href="https://ocs.iaau.edu.kg">https://ocs.iaau.edu.kg/</a></div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">AIU</a>
+                            </h4>
+                        </div>
+                        <div id="collapse2" class="panel-collapse collapse">
+                            <div class="panel-body"><a href="http://iaau.edu.kg">http://iaau.edu.kg</a> </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Calendar</a>
+                            </h4>
+                        </div>
+                        <div id="collapse3" class="panel-collapse collapse">
+                            <div class="panel-body"><a href="calendar/schedule-of-lectures.html">ScheduleOfLectures</a></div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">AMS</a>
+                            </h4>
+                        </div>
+                        <div id="collapse4" class="panel-collapse collapse">
+                            <div class="panel-body"><a href="http://ams.iaau.edu.kg">ams.iaau.edu.kg</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
     </section>
     <footer class="footer-area section-padding-100-0">
         <div class="container-fluid">
@@ -325,6 +381,16 @@
             else
                 document.getElementById("faq").style.display="none";
         }
+
+        function my_func() {
+            var x = document.getElementById("useful_link").style.display;
+            if(x=="none"){
+                document.getElementById("useful_link").style.display="block";
+            }
+            else
+                document.getElementById("useful_link").style.display="none";
+        }
+
         function checks(){
             var radios = document.getElementsByName('semester');
 
@@ -922,5 +988,6 @@
     <script src="js/active.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 </body>
 </html>
