@@ -1,15 +1,30 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+
 <html>
 
-<head>
+<head lang="en">
 
+    <meta charset="UTF-8">
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <title>Degree Guide | </title>
-
+    <title>Class Schedule | CS AIU</title>
     <link rel="stylesheet" type="text/css" href="../../css/reset.css" />
     <link rel="stylesheet" type="text/css" href="../../css/text.css" />
     <link rel="stylesheet" type="text/css" href="../../css/960.css" />
     <link rel="stylesheet" type="text/css" href="../../css/style.css" />
+
+    <link rel="shortcut icon" href="../images/favicon.png"/>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/text.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/960.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/nivo-slider.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/nivo-theme.css"/>
+    <link rel="icon" href="../../img/core-img/favicon.ico">
+
+    <!-- Core Stylesheet -->
+    <link rel="stylesheet" href="../../style.css">
 
 </head>
 
@@ -17,118 +32,174 @@
 
 <div id="container">
 
-    <!-- HEARDER -->
-    <div id="header-wrap">
+    <!-- HEADER -->
+    <header class="header-area">
+        <!-- Navbar Area -->
+        <div class="musica-main-menu">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container-fluid">
+                    <!-- Menu -->
+                    <nav class="classy-navbar justify-content-between" id="musicaNav">
 
-        <div id="header" class="container_16">
+                        <!-- Nav brand -->
+                        <a href="../index.html" class="nav-brand"><img src="../../images/logo.png" alt=""></a>
 
-            <div id="logo" class="grid_5">
-                <img alt="Computer Engineering Department" src="../../images/logo.png" />
-            </div>
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
 
-            <div id="nav" class="grid_11">
-                <ul>
-                    <li><a href="../../index.html">Home</a></li>
-                    <li>
-                        <a href="javascript:void(0)">Department</a>
-                        <ul id="department">
-                            <li><a href="../../department/news.html">News</a></li>
-                            <li><a href="../../department/developments.html">Developments</a></li>
-                            <li><a href="http://ic.iaau.edu.kg" target="_blank">Student Exchange</a></li>
-                            <li><a href="../../department/prospective-students.html">Prospective Students</a></li>
-                            <li><a href="../../department/alumni.html">Graduates</a></li>
-                            <li><a href="../../department/contact-us.html" >Contact Us</a></li>
-                            <li><a href="../../department/info.html" >Info</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0)">Program</a>
-                        <ul id="program">
-                            <li><a href="../../program/courses.html">Courses</a></li>
-                            <li><a href="../../program/research.html">Research</a></li>
-                            <li><a href="../../program/degree-guide.html">Degree Guide</a></li>
-                            <li><a href="../../program/recent-diplomas.html">Recent Diplomas</a></li>
-                            <li><a href="../../program/admission.html">Admission</a></li>
-                            <li><a href="../../program/faq.html">FAQ</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0)">Master Degree</a>
-                        <ul id="master">
-                            <li><a href="../../admission/overview.html">Overview</a></li>
-                            <li><a href="../../admission/courses.html">Courses</a></li>
-                            <li><a href="../../admission/graduate-research.html">Graduate Research</a></li>
-                            <li><a href="../../admission/admission.html">Admission</a></li>
-                        </ul>
-                    </li>
-                    <li >
-                        <a href="javascript:void(0)" >Calendar</a>
-                        <ul id="calendar">
-                            <li><a href="../../calendar/academic-calendar.html">Academic Calendar</a></li>
-                            <li><a href="../../calendar/schedule-of-lectures.html">Schedule of Lectures</a></li>
-                            <li><a href="../../calendar/midterms.html">Midterms Schedule</a></li>
-                            <li><a href="../../calendar/finals.html">Finals Schedule</a></li>
-                            <li><a href="../../calendar/labs.html">Labs Schedule</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="../../faculty/faculty.html">Faculty</a>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0)">Laboratories</a>
-                        <ul id="labs">
-                            <li><a href="../../labs/policy.html">Policy &amp; Regulations</a></li>
-                            <li><a href="../../labs/software.html">Software</a></li>
-                            <li><a href="../../calendar/labs.html">Schedules</a></li>
-                            <li><a href="../../labs/research.html">Research</a></li>
-                            <li><a href="../../labs/people.html">People</a></li>
-                            <li><a href="../../labs/education.html">Education</a></li>
-                            <li><a href="../../department/contact-us.html">Contacts</a></li>
-                        </ul>
-                    </li>
-                </ul>
+                        <!-- Menu -->
+                        <div class="classy-menu">
+
+                            <!-- close btn -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+
+                            <!-- Nav Start -->
+                            <div class="classynav">
+                                <ul id="all">
+                                    <li><a href="#">Department</a>
+                                        <ul class="dropdown">
+                                            <li><a href="../../faculty/faculty.html">Faculty</a></li>
+                                            <li><a href="../../department/news.html">News</a></li>
+
+                                            <li><a href="../../department/developments.html">Developments</a></li>
+
+                                            <li><a href="http://ic.iaau.edu.kg" target="_blank">ExPrograms</a></li>
+
+                                            <li><a href="../../department/prospective-students.html">ProStudents</a></li>
+
+                                            <li><a href="../../department/alumni.html">Alumni</a></li>
+
+                                            <li><a href="../../department/contact-us.html" >Contact Us</a></li>
+
+                                            <li><a href="../../department/info.html" >Info</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Bachelor Program</a>
+                                        <ul class="dropdown">
+                                            <li><a href="../../program/courses.html">Courses</a></li>
+
+                                            <li><a href="../../program/research.html">Research</a></li>
+
+                                            <li><a href="../../program/degree-guide.html">DegreeGuide</a></li>
+                                            <li><a href="../../program/recent-diplomas.html">RecentDiplomas</a></li>
+
+                                            <li><a href="../../program/exam_rules.html">ExamRules</a></li>
+
+                                            <li><a href="../../program/admission.html">Admission</a></li>
+
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Master Degree</a>
+                                        <ul class="dropdown">
+                                            <li><a href="../../grad/overview.html">Overview</a></li>
+
+                                            <li><a href="../../grad/grad-courses.html">Program</a></li>
+
+                                            <li><a href="../../grad/grad-research.html">GraduateResearch</a></li>
+
+                                            <li><a href="../../grad/grad-admission.html">Admission</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Calendar</a>
+                                        <ul class="dropdown">
+                                            <li><a href="http://iaau.edu.kg/view/public/pages/page.xhtml;jsessionid=TCIdhbOa1D1eOGAldtBq-N1i_kOX5KHgKE593l4n.sites?id=281" target="_blank">AcademicCalendar</a></li>
+
+                                            <li><a href="../../calendar/schedule-of-lectures.html">ScheduleOfLectures</a></li>
+
+                                            <li><a href="../../calendar/midterms.html">MidtermsSchedule</a></li>
+
+                                            <li><a href="../../calendar/finals.html">FinalsSchedule</a></li>
+
+                                            <li><a href="../../calendar/labs.html">LabsSchedule</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li><a href="#">Labs</a>
+                                        <ul class="dropdown">
+                                            <li><a href="http://its.iaau.edu.kg/policies/lab-rules.html" target="_blank">PolicyRegulations</a></li>
+
+                                            <li><a href="../../labs/software.html">Software</a></li>
+
+                                            <li><a href="../../department/contact-us.html">Contacts</a></li>
+                                        </ul>
+                                </ul>
+
+                                <!-- Social Button -->
+                                <div class="top-social-info">
+                                    <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                </div>
+
+                            </div>
+                            <!-- Nav End -->
+                        </div>
+                    </nav>
+                </div>
             </div>
         </div>
-    </div>
+    </header>
 
-    <!-- CONTENT -->
-    <div id="wrap-content">
-        <div id="content" class="container_16">
-            <!-- Inner navigation -->
-            <nav>
-                <a href="proposal-agreement-letter.html">22. VI-A/non-VI-A Thesis Proposal Agreement Letter</a> |
-                <a href="sample-abstract.html">24. Sample Abstract</a>
-            </nav>
+    <section class="hero-area">
+        <div class="hero-slides owl-carousel" style="height: 0px;">
 
-            <article>
-                <h3>23. Thesis Release Letter</h3>
+            <!-- Single Hero Slide -->
+            <div class="single-hero-slide d-flex align-items-center justify-content-center" style="height: 150px;">
+                <!-- Slide Img -->
+                <div class="slide-img bg-img" style="background-image: url(../../images/wall1.jpg); height: 150px;"></div>
+                <!-- Slide Content -->
 
-                <p class="main"><strong>General Thesis Release Letter and Classification Review Letter (formerly
-                    Appendix B)</strong></p>
-
-                <p class="main">Prof. Albert R. Meyer<br>
-                    Department of Electrical Engineering and Computer Science<br>
-                    Room 38-476, M.I.T.<br>
-                    Cambridge, MA 02139</p>
-
-                <p class="main">Subject: Master of Engineering Thesis of [Student]</p>
-
-                <p class="main">Dear Prof. Meyer:</p>
-
-                <p class="main">I have reviewed the attached thesis of [Student] on behalf of [Company]. The thesis is within the scope of the
-                    thesis proposal as previously approved and does not contain any material that is objectionable to [Company].
-                    It is also approved for its technical content.</p>
-
-                <p class="main">It is understood that the actual thesis document will be the permanent property of M.I.T. and will be placed in
-                    the M.I.T. Library within one month after the date of submission. [Company] agrees that M.I.T. shall have the
-                    nonexclusive right to reproduce, publish, and distribute the thesis.</p>
-
-                <hr class="main">
-                <p class="main"><small>Authorized Official of Company</small></p>
-            </article>
+                <!-- Big Text -->
+            </div>
         </div>
-    </div>
-    <!-- END OF CONTENT -->
+        <div style="padding-top: 120px;"></div>
+    </section><div style="padding-top: 100px"></div>
+
+        <!-- CONTENT -->
+        <div id="wrap-content">
+            <div id="content" class="container_16">
+                <!-- Inner navigation -->
+                <nav>
+                    <a href="proposal-agreement-letter.html">22. VI-A/non-VI-A Thesis Proposal Agreement Letter</a> |
+                    <a href="sample-abstract.html">24. Sample Abstract</a>
+                </nav>
+
+                <article>
+                    <h3>23. Thesis Release Letter</h3>
+
+                    <p class="main"><strong>General Thesis Release Letter and Classification Review Letter (formerly
+                        Appendix B)</strong></p>
+
+                    <p class="main">Prof. Albert R. Meyer<br>
+                        Department of Electrical Engineering and Computer Science<br>
+                        Room 38-476, M.I.T.<br>
+                        Cambridge, MA 02139</p>
+
+                    <p class="main">Subject: Master of Engineering Thesis of [Student]</p>
+
+                    <p class="main">Dear Prof. Meyer:</p>
+
+                    <p class="main">I have reviewed the attached thesis of [Student] on behalf of [Company]. The thesis is within the scope of the
+                        thesis proposal as previously approved and does not contain any material that is objectionable to [Company].
+                        It is also approved for its technical content.</p>
+
+                    <p class="main">It is understood that the actual thesis document will be the permanent property of M.I.T. and will be placed in
+                        the M.I.T. Library within one month after the date of submission. [Company] agrees that M.I.T. shall have the
+                        nonexclusive right to reproduce, publish, and distribute the thesis.</p>
+
+                    <hr class="main">
+                    <p class="main"><small>Authorized Official of Company</small></p>
+                </article>
+            </div>
+        </div>
+        <!-- END OF CONTENT -->
 
     <!-- FOOTER -->
     <div id="footer-wrap" >
