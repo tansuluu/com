@@ -7664,8 +7664,8 @@ h1, h2, h3, h4, h5,
   .btn:hover, .btn:active, .btn:focus {
     outline: none; }
   .btn.btn-primary {
-    background: #ff5656;
-    border: 2px solid #ff5656;
+    background: #78d5ef;
+    border: 2px solid #78d5ef;
     color: #fff; }
     .btn.btn-primary:hover {
       border: 2px solid #ff5656;
@@ -7766,8 +7766,8 @@ h1, h2, h3, h4, h5,
     float: left;
     border-radius: 0;
     margin-bottom: 0;
-    color: rgba(255, 255, 255, 0.6);
-    font-size: 20px;
+    color: #0A85BB ;
+    font-size: 25px;
     font-weight: 400;
     position: relative; }
     .ftco-section-3 .nav-pills .nav-link:after {
@@ -7783,12 +7783,12 @@ h1, h2, h3, h4, h5,
       border-color: transparent #fafafa transparent transparent;
       opacity: 0; }
     .ftco-section-3 .nav-pills .nav-link span {
-      font-size: 24px;
+      font-size: 25px;
       margin-right: 5px;
-      color: rgba(255, 255, 255, 0.6); }
+      color: #f0f0f0; }
     .ftco-section-3 .nav-pills .nav-link.active, .ftco-section-3 .nav-pills .nav-link:hover {
       color: #fff;
-      font-size: 20px;
+      font-size: 25px;
       -moz-transition: all 0.3s ease;
       -o-transition: all 0.3s ease;
       -webkit-transition: all 0.3s ease;
@@ -7966,7 +7966,7 @@ h1, h2, h3, h4, h5,
       height: 300px; } }
 
 .aside-stretch {
-  background: #ff7070;
+  background:  #78d5ef;
   position: relative; }
   .aside-stretch:after {
     position: absolute;
@@ -7974,8 +7974,12 @@ h1, h2, h3, h4, h5,
     right: 100%;
     bottom: 0;
     content: '';
-    width: 360%;
-    background: #ff7070; }
+    width: 100%;
+    background-image: url(../images/uni.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 300px 580px;
+  }
   @media (max-width: 767.98px) {
     .aside-stretch {
       background: transparent; }

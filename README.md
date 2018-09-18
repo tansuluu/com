@@ -8,8 +8,8 @@ Redesign the existing Computer Science department's website. The mini project's 
 # link to site: https://tansuluu.github.io/com
 
 
-
-├── calendar <br>
+.
+├── calendar<br>
 │   ├── academic-calendar.html<br>
 │   ├── finals.html<br>
 │   ├── labs.html<br>
@@ -17,7 +17,6 @@ Redesign the existing Computer Science department's website. The mini project's 
 │   └── schedule-of-lectures.html<br>
 ├── department<br>
 │   ├── alumni.html<br>
-│   ├── contacts.jpg<br>
 │   ├── contact-us.html<br>
 │   ├── developments.html<br>
 │   ├── graduates.html<br>
@@ -31,14 +30,18 @@ Redesign the existing Computer Science department's website. The mini project's 
 │   ├── m.omuraliev.html<br>
 │   ├── n.shaidullaev.html<br>
 │   └── s.erdolatov.html<br>
+├── fonts<br>
+│   ├── flaticon<br>
+│   │   ├── font<br>
+│   │   │   └── flaticon.html<br>
 ├── grad<br>
 │   ├── grad-admission.html<br>
 │   ├── grad-courses.html<br>
 │   ├── grad-research.html<br>
 │   └── overview.html<br>
 ├── help.html<br>
-index.html<br>
-index.html<br>
+├── h.html<br>
+└── index.html<br>
 │   ├── labs.html<br>
 │   ├── policy.html<br>
 │   └── software.html<br>
@@ -51,4 +54,27 @@ index.html<br>
 │   ├── faq.html<br>
 │   ├── recent-diplomas.html<br>
 │   ├── research.html<br>
-
+│   └── thesis<br>
+│       ├── adminreg.html<br>
+│       ├── campus.html<br>
+│       ├── checklist.html<br>
+│       ├── completion.html<br>
+│       ├── copyright.html<br>
+│       ├── doc-specs.html<br>
+│       ├── grade.html<br>
+│       ├── intro.html<br>
+│       ├── masterworks.html<br>
+│       ├── prizing.html<br>
+│       ├── proposal-agreement-letter.html<br>
+│       ├── proposal.html<br>
+│       ├── release-letter.html<br>
+│       ├── sample-abstract.html<br>
+│       ├── sample-title.html<br>
+│       ├── sample-title-student.html<br>
+│       ├── start.html<br>
+│       ├── submitting.html<br>
+│       ├── supervisor-topic.html<br>
+│       ├── template.html<br>
+│       ├── thesis-spec.html<br>
+│       ├── timing.html<br>
+└──     └── topic.html<br>
