@@ -218,6 +218,59 @@
         <button onclick="checks()" style="margin-left: 80px">OK</button>
         <div id="conten" style="margin-top: 20px"></div>
     </div>
+
+        <button onclick="my_func()" style="margin-right: 60px; margin-top: 15px; margin-left: 60px">Useful links</button>
+        <div  id="useful_link" style="display: none; margin-top: 15px">
+
+            <div class="container">
+                <h2>Useful links</h2>
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">OCS</a>
+                            </h4>
+                        </div>
+                        <div id="collapse1" class="panel-collapse collapse in">
+                            <div class="panel-body"><a href="https://ocs.iaau.edu.kg">https://ocs.iaau.edu.kg/</a></div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">AIU</a>
+                            </h4>
+                        </div>
+                        <div id="collapse2" class="panel-collapse collapse">
+                            <div class="panel-body"><a href="http://iaau.edu.kg">http://iaau.edu.kg</a> </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Calendar</a>
+                            </h4>
+                        </div>
+                        <div id="collapse3" class="panel-collapse collapse">
+                            <div class="panel-body"><a href="calendar/schedule-of-lectures.html">ScheduleOfLectures</a></div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">AMS</a>
+                            </h4>
+                        </div>
+                        <div id="collapse4" class="panel-collapse collapse">
+                            <div class="panel-body"><a href="http://ams.iaau.edu.kg">ams.iaau.edu.kg</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
     </section>
     <footer class="footer-area section-padding-100-0">
         <div class="container-fluid">
@@ -325,6 +378,16 @@
             else
                 document.getElementById("faq").style.display="none";
         }
+
+        function my_func() {
+            var x = document.getElementById("useful_link").style.display;
+            if(x=="none"){
+                document.getElementById("useful_link").style.display="block";
+            }
+            else
+                document.getElementById("useful_link").style.display="none";
+        }
+
         function checks(){
             var radios = document.getElementsByName('semester');
 
