@@ -7978,7 +7978,7 @@ h1, h2, h3, h4, h5,
     background-image: url(../images/uni.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 300px 580px;
+    background-size: 100% 100%;
   }
   @media (max-width: 767.98px) {
     .aside-stretch {
