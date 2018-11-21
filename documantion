@@ -1,0 +1,34 @@
+  Com’s WEBsite redesign 	
+Nurdin Imanaliev
+Nadyr Sultanov
+Tansuluu Myrzaeva
+Meder Abdyldaev
+
+User story
+
+Ali is a first year student in Computer science faculty in AIU. He is for the first time, so he doesn’t know  many things about educational study plan, so he uses web application of CS department. With this app he can get registre for the term: select subjects, build study plan. Before, he can find which subject to take, and calculate how many credits and hours it has. 
+Next years, when Ali is not a first year student, while getting registre he can also learn which subject is prerequisite of which  new subject he wants to take (at this point it is important if Ali has fails or not). All these methods are possible in our web application…
+
+2) Khabib is a student of Ala-too university and he want to know his schedule for Tuesday. For this purpose he can use our web application. On the main page he can hover on ‘Calendar’ link, which is located in header part of the page and press ‘Schedule Of Lectures’ button. There is a table of lectures for all Computer Science Department groups. On left most side there is a week day which are signed with different colors. Then second column is a number of his group which is related to his year in university, Khabib is Com-18 group’s student and he has to choose ‘1a’ or ‘1b’, where ‘1’ is number of his year in university and ‘a’ , ‘b’ is related to his internal group in Com-18. On the upper bound there is sequence of hours in a day and lower is the time of beginning and finishing lectures.
+
+3) Being a student of com 18 group, it becomes clear that Khabib has the first year of study at the Ala Too university.
+
+He can easily navigate on our rethought site on his own, finding the necessary information for himself. Despite this, everyone sometimes needs help. 
+
+Here our unique assistant comes to help.
+
+On the main page of a site visitor, an unobtrusive icon will be met. The icon depicts the familiar assistant, which does not cause the student any false thoughts. By clicking on it, the student will have the opportunity to further adjust the site information for himselve. 
+
+Despite all the information provided, Khabib still has a few questions that the online course calculator and links to third-party platforms did not help. However, Khabib sees the familiar acronym for it - FAQ and presses it with complete confidence.
+
+FAQ means frequently asked questions
+
+Our FAQ contains all possible questions from potential site visitors who may remain unsatisfied with the final answer based on the information provided on the site. Our FAQ not only offers you to get acquainted with the most frequently asked questions, but is also being supplemented all the time, thereby covering a large area, providing our site visitors with the quickest possible answer to their questions, without needing to make call to the reference numbers.
+
+
+
+Benefits:
+1)Save their time to get register
+2)Easily find answers to their questions from FAQ
+3)Schedule will introduce them their lectures plan
+
