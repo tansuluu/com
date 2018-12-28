@@ -220,7 +220,6 @@
         <button type="button" class="btn btn-info active" onclick="checks()" style="margin-left: 80px;padding-bottom: 30px">OK</button>
         <div id="conten" style="margin-top: 20px"></div>
     </div>
-
         <button type="button" class="btn btn-info active" onclick="my_func()" style="margin-right: 60px; margin-top: 15px; padding-bottom: 30px">Useful links</button>
         <div  id="useful_link" style="display: none; margin-top: 15px">
 
@@ -272,6 +271,15 @@
                 </div>
             </div>
 
+        </div>
+        <button type="button" class="btn btn-info active" style="margin-top: 18px;margin-right: 60px; padding-bottom: 30px" onclick="gpaFunc()">Get register</button>
+        <div id="gpa">
+            <input id="subj" type="text">
+            <input type="number" id=cred">
+            <button id="addS" onclick="addSub">ADD</button>
+            <div id="tableGPA">
+
+            </div>
         </div>
 
     </section>
@@ -373,6 +381,15 @@
             else
                 document.getElementById("cont").style.display="none";
         }
+        function gpaFunc() {
+            var x = document.getElementById("gpa").style.display;
+            if(x=="none"){
+                document.getElementById("gpa").style.display="block";
+            }
+            else
+                document.getElementById("gpa").style.display="none";
+
+        }
         function func() {
             var x = document.getElementById("faq").style.display;
             if(x=="none"){
@@ -390,7 +407,11 @@
             else
                 document.getElementById("useful_link").style.display="none";
         }
-
+        function addSub() {
+            var subj=$("#subj").val();
+            var cred=$("#cred").val();
+            console.log(subj+" "+cred);
+        }
         function checks(){
             var radios = document.getElementsByName('semester');
 
