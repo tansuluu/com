@@ -272,13 +272,26 @@
             </div>
 
         </div>
-        <button type="button" class="btn btn-info active" style="margin-top: 18px;margin-right: 60px; padding-bottom: 30px" onclick="gpaFunc()">Get register</button>
-        <div id="gpa">
+        <button type="button" class="btn btn-info active" style="margin-top: 18px;margin-right: 60px; padding-bottom: 30px" onclick="gpaFunc()">Calculate GPA</button>
+        <div id="gpa" style="display: none; margin-top: 16px">
+            <label>Subject: </label>
             <input id="subj" type="text">
-            <input type="number" id=cred">
-            <button id="addS" onclick="addSub">ADD</button>
+            <label>Credit: </label>
+            <input type="number" id="cred">
+            <label>Points: </label>
+            <input type="number" id="bal">
+            <button id="addS" onclick="addSub()">ADD</button>
             <div id="tableGPA">
-
+                <table style="margin-top: 20px">
+                    <thead>
+                    <tr >
+                        <th>Subject</th>
+                    </tr>
+                    </thead>
+                    <tbody id="gpaT">
+                    </tbody>
+                </table>
+                <h3 id="jpa"></h3>
             </div>
         </div>
 
@@ -373,6 +386,9 @@
 </div>
     <script>
         var rem="";
+        var gpas=0;
+        var arr=[];
+        var points=[]
         function myFunction() {
             var x = document.getElementById("cont").style.display;
             if(x=="none"){
@@ -398,7 +414,6 @@
             else
                 document.getElementById("faq").style.display="none";
         }
-
         function my_func() {
             var x = document.getElementById("useful_link").style.display;
             if(x=="none"){
@@ -410,7 +425,20 @@
         function addSub() {
             var subj=$("#subj").val();
             var cred=$("#cred").val();
-            console.log(subj+" "+cred);
+            var point=$("#bal").val();
+            gpas=gpas+parseInt(cred);
+            arr[arr.length]=cred;
+            points[points.length]=parseInt(point)/100;
+            $("#gpaT").append("<table class=\"table table-condensed\">\n" +
+                "<tr><td>"+subj+"</td><td>"+cred+"</td><td>"+point+"</td></tr>");
+            g=100/gpas;
+            aa=0;
+            console.log(g)
+            for (var i=0; i<arr.length;i++){
+                aa=aa+g*parseInt(arr[i])*points[i];
+            }
+            $("#jpa").text("GPA is "+aa);
+
         }
         function checks(){
             var radios = document.getElementsByName('semester');
