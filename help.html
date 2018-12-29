@@ -426,6 +426,9 @@
             var subj=$("#subj").val();
             var cred=$("#cred").val();
             var point=$("#bal").val();
+            $("#subj").val("");
+            $("#cred").val("");
+            $("#bal").val("");
             gpas=gpas+parseInt(cred);
             arr[arr.length]=cred;
             points[points.length]=parseInt(point)/100;
